@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: lightyellow lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.invitation-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff9e6;
+    padding: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.border-design {
+    border: 2px solid #b8860b;
+    padding: 15px;
+    position: relative;
+    background-image: 
+        radial-gradient(#b8860b 3px, transparent 3px),
+        radial-gradient(#b8860b 3px, transparent 3px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    background-repeat: repeat;
+    background-clip: padding-box;
+}
+
+.border-design::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background-color: #fff9e6;
+    z-index: 0;
+}
+
+.inner-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    text-align: center;
+    background-color: #fff9e6;
+    border: 1px dashed #b8860b;
+}
+
+/* Rangoli Designs */
+.rangoli-top, .rangoli-bottom {
+    height: 60px;
+    margin: 10px auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.rangoli-top {
+    width: 300px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30"><path d="M50,5 C60,15 70,20 90,20 C70,25 60,30 50,25 C40,30 30,25 10,20 C30,20 40,15 50,5" fill="none" stroke="%23b8860b" stroke-width="1"/><circle cx="50" cy="15" r="3" fill="%23b8860b"/><circle cx="40" cy="20" r="2" fill="%23b8860b"/><circle cx="60" cy="20" r="2" fill="%23b8860b"/><circle cx="30" cy="22" r="2" fill="%23b8860b"/><circle cx="70" cy="22" r="2" fill="%23b8860b"/><circle cx="20" cy="20" r="2" fill="%23b8860b"/><circle cx="80" cy="20" r="2" fill="%23b8860b"/></svg>');
+}
+
+.rangoli-bottom {
+    width: 300px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30"><path d="M50,25 C60,15 70,10 90,10 C70,5 60,0 50,5 C40,0 30,5 10,10 C30,10 40,15 50,25" fill="none" stroke="%23b8860b" stroke-width="1"/><circle cx="50" cy="15" r="3" fill="%23b8860b"/><circle cx="40" cy="10" r="2" fill="%23b8860b"/><circle cx="60" cy="10" r="2" fill="%23b8860b"/><circle cx="30" cy="8" r="2" fill="%23b8860b"/><circle cx="70" cy="8" r="2" fill="%23b8860b"/><circle cx="20" cy="10" r="2" fill="%23b8860b"/><circle cx="80" cy="10" r="2" fill="%23b8860b"/></svg>');
+}
+
+/* Header Styles */
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+    color: #b8860b;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    color: #8b4513;
+    font-weight: 500;
+}
+
+/* Cow Images */
+.cow-images {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.cow {
+    width: 100px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cow.left {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80"><path d="M30,60 Q40,70 60,60 Q70,55 75,60 Q80,65 85,60 L90,65 L85,70 Q75,75 65,70 Q55,75 40,70 Q30,65 25,70 L20,65 L25,60 Q28,58 30,60 Z" fill="%23f5deb3" stroke="%238b4513" stroke-width="1"/><circle cx="35" cy="63" r="2" fill="%238b4513"/><circle cx="65" cy="63" r="2" fill="%238b4513"/><path d="M45,67 Q50,70 55,67" fill="none" stroke="%238b4513" stroke-width="1"/><path d="M25,50 Q15,40 20,30 Q25,25 30,30" fill="none" stroke="%238b4513" stroke-width="1"/><path d="M85,50 Q95,40 90,30 Q85,25 80,30" fill="none" stroke="%238b4513" stroke-width="1"/><path d="M40,60 L30,40 L50,30 L70,40 L60,60" fill="%23f5deb3" stroke="%238b4513" stroke-width="1"/><path d="M45,30 Q50,20 55,30" fill="%23f5deb3" stroke="%238b4513" stroke-width="1"/></svg>');
+    transform: scaleX(-1);
+}
+
+.cow.right {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80"><path d="M30,60 Q40,70 60,60 Q70,55 75,60 Q80,65 85,60 L90,65 L85,70 Q75,75 65,70 Q55,75 40,70 Q30,65 25,70 L20,65 L25,60 Q28,58 30,60 Z" fill="%23f5deb3" stroke="%238b4513" stroke-width="1"/><circle cx="35" cy="63" r="2" fill="%238b4513"/><circle cx="65" cy="63" r="2" fill="%238b4513"/><path d="M45,67 Q50,70 55,67" fill="none" stroke="%238b4513" stroke-width="1"/><path d="M25,50 Q15,40 20,30 Q25,25 30,30" fill="none" stroke="%238b4513" stroke-width="1"/><path d="M85,50 Q95,40 90,30 Q85,25 80,30" fill="none" stroke="%238b4513" stroke-width="1"/><path d="M40,60 L30,40 L50,30 L70,40 L60,60" fill="%23f5deb3" stroke="%238b4513" stroke-width="1"/><path d="M45,30 Q50,20 55,30" fill="%23f5deb3" stroke="%238b4513" stroke-width="1"/></svg>');
+}
+
+/* Invitation Text */
+.invitation-text {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.invitation-text p {
+    margin-bottom: 5px;
+    color: #5d4037;
+}
+
+.invitation-text .intro {
+    font-style: italic;
+    color: #8b4513;
+}
+
+.invitation-text .names {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #b8860b;
+    margin: 10px 0;
+}
+
+.invitation-text .event {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #8b4513;
+    margin: 10px 0;
+}
+
+.invitation-text .address {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Date and Time */
+.date-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 30px;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #b8860b;
+    border-radius: 10px;
+    background-color: #fff;
+    min-width: 120px;
+}
+
+.date-container .day {
+    font-weight: 600;
+    color: #8b4513;
+}
+
+.date-container .date {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #b8860b;
+    line-height: 1;
+    margin: 5px 0;
+}
+
+.date-container .month {
+    font-size: 0.9rem;
+    color: #8b4513;
+}
+
+.time-container {
+    padding: 15px;
+    border: 1px solid #b8860b;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.time-container .time {
+    font-weight: 600;
+    color: #8b4513;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    font-style: italic;
+    color: #8b4513;
+}
+
+.footer .contact {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .inner-content {
+        padding: 15px;
+    }
+    
+    .header h1 {
+        font-size: 3rem;
+    }
+    
+    .header h2 {
+        font-size: 1rem;
+    }
+    
+    .cow {
+        width: 80px;
+        height: 60px;
+    }
+    
+    .rangoli-top, .rangoli-bottom {
+        width: 200px;
+        height: 40px;
+    }
+    
+    .date-time {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
